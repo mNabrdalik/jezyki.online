@@ -1,0 +1,345 @@
+@mixin bg-offer
+    margin: 0 auto
+    width: 100%
+    height: auto     
+    background-size: cover  
+
+@mixin img-lang
+    background-position: center
+    background-size: cover      
+
+$yellow-color: #ffc93c 
+$dblue-color: #07689f
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    background-color: $yellow-color
+    color: #fff
+    font-family: 'Montserrat', sans-serif;
+    
+.yellow-txt
+    color: $yellow-color
+
+.blue-txt
+    color: $dblue-color
+
+.wrapper 
+    max-width: 2560px
+    width: 80%   
+    margin: 0 auto
+
+.txt-shadow
+    text-shadow: 3px 3px 5px #000
+
+.box-shadow
+    position: absolute 
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .6)
+    z-index: -10
+
+.visibility
+    visibility: hidden //sluzy do ukrywania treści, po to aby uzyskac takie efekt, ze tresc, pojawi sie dopiero wtedy gdy bedziemy na jej wyskosci na ekranie. W animate.css w klasie .animated - ustawic visibility: visible!important;    
+
+//NAV    
+.nav
+    width: 100vw
+    background-color: $dblue-color
+    height: 60px
+    box-shadow: 2px 0px 5px black
+
+    a.nav-link
+        position: relative
+        top: 6px
+        padding: 10px 15px
+        height: 60px
+        color: $dblue-color
+        font-size: 18px
+        color: #fff
+        z-index: 1
+        transition: color .5s
+          
+    .nav-link:hover
+        color: $yellow-color
+
+.dropdown-menu
+    background-color: $dblue-color
+
+.dropdown-item 
+    padding-left: 5px
+    color: #fff
+
+.dropdown-item:hover
+    background-color: $yellow-color
+    
+
+.flag-size, .fas
+    margin-right: 10px
+    width: 30px
+    border-radius: 3px
+   
+p.logo
+    position: fixed
+    padding: 0 10px
+    margin: 0
+    top: 16px
+    width: 100%  
+    text-align: right
+    font-size: 18px
+    
+//HEADER
+.header-img 
+    position: relative
+    height: 100vh
+    background-image: url('../img/header-img.jpg')
+    background-position: center
+    background-size: cover
+    background-attachment: fixed //obraz zostaje w miejscu
+    z-index: 0
+
+    .header-shadow
+        position: absolute 
+        width: 100%
+        height: 100%
+        background-color: #081e2b6c
+        z-index: -10
+
+    .header-text
+        position: relative
+        top: 30%
+        padding: 25px
+        width: 80%
+        text-align: center
+        background-color: #07679fcb
+
+        h1
+            font-size: 32px
+            padding-bottom: 10px 
+        p
+            font-size: 18px
+        
+.fa-chevron-down
+    position: absolute
+    left: 50%
+    top: 90%
+    transform: translateX(-50%)
+    color: $yellow-color
+    font-size: 25px
+ 
+//MAIN
+.achievement-number 
+    margin-bottom: 10px
+    font-size: 20px
+    text-shadow: 3px 3px 2px black
+
+.achievement-list
+    .fas
+        font-size: 26px  
+        text-shadow: 3px 3px 2px black
+    
+.achievement-text
+    padding-bottom: 20px
+    max-width: 350px
+    font-size: 14px
+
+.btn-primary
+    width: 70%
+    background-color: $dblue-color
+    border-color: $dblue-color
+    font-size: 18px
+
+.btn-primary:hover
+    background-color: #40a8c4
+    border-color: #40a8c4
+    text-decoration: none
+    
+.jumbotron
+    position: relative
+    margin: 0 
+    height: 100%
+    background: rgb(255,201,60);
+    background: linear-gradient( rgba(255,201,60,1) 75%, rgba(7,104,159,1) 100%);
+
+    .content-box
+        position: relative
+        max-width: 1200px
+        height: 80%
+        z-index: 0
+        text-align: center
+
+        h2.txt-shadow
+            padding: 30px
+            font-size: 26px
+
+        .greetings
+            margin-bottom: 25px
+            font-style: italic
+            font-size: 18px
+
+        h4
+            margin: 35px 10px
+            text-decoration: underline solid white 
+            color: $yellow-color
+            font-size: 20px
+            
+        li
+            margin-bottom: 20px
+            padding: 0 15px
+            list-style: none
+            font-size: 16px
+
+    .more-info-btn
+        margin-bottom: 100px
+
+    .fa-chevron-down
+        display: none
+    
+.jumbotron.blue
+    background-color: $dblue-color
+    background: rgb(255,201,60);
+    background: linear-gradient(rgba(7,104,159,1) 75%, rgba(255,201,60,1) 100%,);
+       
+.fas.yellow
+    color: $yellow-color
+    
+.img-eng
+        background-image: url('../img/eng-box.jpg')
+        @include img-lang
+
+.img-esp
+        background-image: url('../img/esp-box.jpg')
+        @include img-lang      
+
+.img-de
+        background-image: url('../img/de-box.jpg')
+        @include img-lang                
+
+.img-fr
+        background-image: url('../img/fr-box.jpg')
+        @include img-lang
+
+.img-contact
+        background-image: url('../img/contact-box.jpg')
+        @include img-lang             
+
+//OFFER PAGES AND CONTACT-FORM   
+.eng-offer
+    @include bg-offer
+    background: url('../img/eng-offer.jpg') no-repeat center center fixed        
+
+.esp-offer
+    @include bg-offer
+    background: url('../img/esp-offer.jpg') no-repeat center center fixed   
+
+.de-offer
+    @include bg-offer
+    background: url('../img/de-offer.jpg') no-repeat center center fixed              
+
+.contact-form
+    @include bg-offer
+    background: url('../img/contact-form.jpg') no-repeat center center fixed        
+  
+.offer-box
+    position: relative
+    top: 20px
+    max-width: 1200px
+    z-index: 0
+    text-align: center
+    background-color: #073f5fd3
+
+    h2.txt-shadow
+        padding: 15px
+        font-size: 26px
+
+    h2.form-head
+        padding: 10px
+        font-size: 22px
+
+    .price
+        margin: 10px
+        text-transform: uppercase
+
+    h3 .yellow-txt
+        text-transform: none 
+
+    h4
+        margin: 20px 10px
+        color: $yellow-color
+        text-transform: uppercase
+        text-decoration: underline solid white 
+        font-size: 20px
+       
+    h5
+        margin: 10px
+        font-size: 18px
+
+    li
+        margin-bottom: 20px 
+        padding: 5px 20px
+        list-style: none
+        font-size: 16px
+
+    .form-check-label
+        font-size: 14px
+        text-align: left
+
+.bd-placeholder-img
+    margin-bottom: 20px 
+
+.about-teacher
+    margin: 5px 20px 20px
+    font-size: 14px
+
+.btn.btn-primary.more-info-btn.sign-in
+    position: relative
+    margin-top: 5px
+    margin-bottom: 50px
+
+//FOOTER
+    
+.brand-name
+    text-transform: uppercase
+
+h5.find-us  
+    padding-bottom: 10px  
+    text-transform: uppercase
+    text-decoration: underline solid white
+    color: $yellow-color
+    font-size: 18px
+
+.contact-list
+    font-size: 32px
+    text-shadow: 5px 5px 3px black
+
+    a
+        color: white
+        transition: color .5s
+
+    a:hover
+        color: $dblue-color
+
+.fab
+    margin-bottom: 20px 
+
+.contact-btn
+    margin-top: 0px
+    margin-bottom: 60px 
+    width: 60%
+    
+.inner
+    height: 40px
+    background-color: $dblue-color
+
+    p
+        position: relative
+        top: 10px
+        margin-bottom: 0px
+        text-align: center
+        font-size: 12px

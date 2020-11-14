@@ -1,0 +1,54 @@
+.header-img .header-text {
+  width: 50%;
+}
+
+.jumbotron .content-box h2.txt-shadow {
+  font-size: 30px;
+}
+
+.jumbotron .content-box .greetings {
+  font-size: 20px;
+}
+
+.jumbotron .content-box h4 {
+  font-size: 22px;
+}
+
+.jumbotron .more-info-btn {
+  margin-bottom: 150px;
+}
+
+.jumbotron .fa-chevron-down {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  color: #ffc93c;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.fas:hover {
+  color: #40a8c4;
+}
+
+.jumbotron.blue .fa-chevron-down {
+  color: #07689f;
+}
+
+.jumbotron.blue .fa-chevron-down:hover {
+  color: #40a8c4;
+}
+
+.achievement-text {
+  font-size: 16px;
+}
+
+.btn-primary {
+  width: 40%;
+}
+
+.offer-box h2.form-head {
+  padding: 20px;
+  font-size: 28px;
+}
+/*# sourceMappingURL=large.css.map */

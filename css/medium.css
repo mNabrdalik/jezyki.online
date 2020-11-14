@@ -1,0 +1,40 @@
+.nav a.nav-link {
+  top: 5px;
+  font-size: 22px;
+}
+
+p.logo {
+  top: 15px;
+  font-size: 22px;
+}
+
+.dropdown-item {
+  font-size: 18px;
+}
+
+.header-img .header-text {
+  width: 55%;
+}
+
+div.col-md-4 {
+  padding: 0 25px;
+}
+
+.btn-primary {
+  width: 45%;
+}
+
+.offer-box h2.form-head {
+  padding: 15px;
+  font-size: 26px;
+}
+
+h5.find-us {
+  padding-top: 10px;
+}
+
+.contact-btn {
+  width: 50%;
+  margin-top: 60px;
+}
+/*# sourceMappingURL=medium.css.map */
