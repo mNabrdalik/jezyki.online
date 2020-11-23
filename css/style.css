@@ -124,6 +124,8 @@ p.logo {
   width: 80%;
   text-align: center;
   background-color: #07679fcb;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .header-img .header-text h1 {
@@ -241,30 +243,40 @@ p.logo {
   background-image: url("../img/eng-box.jpg");
   background-position: center;
   background-size: cover;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .img-esp {
   background-image: url("../img/esp-box.jpg");
   background-position: center;
   background-size: cover;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .img-de {
   background-image: url("../img/de-box.jpg");
   background-position: center;
   background-size: cover;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .img-fr {
   background-image: url("../img/fr-box.jpg");
   background-position: center;
   background-size: cover;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .img-contact {
   background-image: url("../img/contact-box.jpg");
   background-position: center;
   background-size: cover;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .eng-offer {
@@ -306,6 +318,8 @@ p.logo {
   z-index: 0;
   text-align: center;
   background-color: #073f5fd3;
+  -webkit-box-shadow: 10px 10px 20px black;
+          box-shadow: 10px 10px 20px black;
 }
 
 .offer-box h2.txt-shadow {
